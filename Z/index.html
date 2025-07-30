@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uranga uchish uchun ro'yhatdan o'tish formasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <img class="image-1"src="https://cdn.pixabay.com/photo/2020/05/17/23/42/planet-5183889_1280.png" alt="">
+        <h1 class="nik">Uranga uchish uchun ro'yhatdan o'tish formasi</h1>
+        <p>Ali Uranga uchmoqchi. Lekin u Uranga uchish uchun Uranga uchish formasini to'ldirishi kerak.
+        </p>
+
+        <form action="#" method="post">
+            <div class="form-group form-group-1">
+                <label for="full-name">Ism-familiyasi:</label>
+                <input type="text" id="full-name" name="fullName" required>
+            </div>
+
+            <div class="form-group form-group-2">
+                <label for="age">Yoshi:</label>
+                <input type="number" id="age" name="age" min="18" max="100" required>
+            </div>
+
+            <div class="form-group form-group-3">
+                <label for="dob">Tug'ilgan sanasi:</label>
+                <input type="date" id="dob" name="dateOfBirth" required>
+            </div>
+
+            <div class="form-group form-group-4">
+                <label for="province">Tug'ilgan shahri:</label>
+                <input type="text" id="province" name="provinceOfBirth" required>
+            </div>
+
+            <div class="form-group form-group-4">
+                <label for="city">Tug'ilgan viloyati:</label>
+                <input type="text" id="city" name="cityOfBirth" required>
+            </div>
+
+            <div class="form-group form-group-5">
+                <label for="hobbies">Hobbylari:</label>
+                <input type="text" id="hobbies" name="hobbies" placeholder="Masalan: kitob o'qish, sport, musiqa">
+            </div>
+
+            <div class="form-group form-group-6">
+                <label for="why-mars">Nima uchun Uranga uchmoqchi?</label>
+                <textarea id="why-mars" name="whyMars" required></textarea>
+            </div>
+
+            <div class="form-group form-group-7">
+                <label for="budget">Budjeti:</label>
+                <input type="number" id="budget" name="budget" min="0" step="1000" required>
+            </div>
+
+            <div class="form-group form-group-8">
+                <label>Oldin Uranga uchganligi haqida so'rov:</label>
+                <div class="radio-group">
+                    <input type="radio" id="prev-mars-yes" name="prevMarsFlight" value="yes">
+                    <label for="prev-mars-yes">Ha</label>
+                    <input type="radio" id="prev-mars-no" name="prevMarsFlight" value="no" checked>
+                    <label for="prev-mars-no">Yo'q</label>
+                </div>
+            </div>
+
+            <div class="form-group form-group-9">
+                <label for="mars-knowledge">Uran haqida bilganlari:</label>
+                <textarea id="mars-knowledge" name="marsKnowledge" required></textarea>
+            </div>
+
+            <div class="form-group form-group-11">
+                <label for="fly-with">Kimlar bilan uchmoqchi?</label>
+                <input type="text" id="fly-with" name="flyWith" placeholder="Masalan: oila a'zolari, do'stlar, yolg'iz">
+            </div>
+
+            <div class="form-group form-group-12">
+                <label for="when-fly">Qachon uchmoqchi?</label>
+                <input type="date" id="when-fly" name="whenToFly" required>
+            </div>
+
+            <button class="button" type="submit">Ro'yhatdan o'tish</button>
+        </form>
+    </div>
+</body>
+
+</html>
