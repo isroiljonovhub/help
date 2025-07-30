@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "popions";
+}
+.container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+.btn {
+  border-radius: 64px;
+  border: none;
+  background-color: rgb(220, 56, 69);
+  color: white;
+  padding: 24px 56px;
+  font-size: 16px;
+  font-weight: 500px;
+  line-height: 24px;
+  text-align: center;
+}
+/* header */
+
+.navbar {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.nav-item {
+}
+.bar {
+  display: none;
+  cursor: pointer;
+}
+.sitenav-link {
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  transition: all 0.4s linear;
+}
+.sitenav-link:hover {
+  color: red;
+}
+.active {
+  color: red;
+}
+
+/* hero */
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  justify-content: center;
+}
+.hero-title {
+  color: rgb(40, 37, 37);
+  font-size: 40px;
+  font-weight: 600px;
+  line-height: 140%;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.hero-text {
+  olor: rgb(93, 86, 86);
+  font-size: 15px;
+  font-weight: 400px;
+  line-height: 23px;
+  text-align: left;
+  margin-bottom: 48px;
+}
+
+.start-giving {
+  padding-top: 72px;
+  padding-bottom: 32px;
+}
+.cart-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100%;
+  padding-bottom: 56px;
+}
+
+.giving-cart {
+}
+.giving-carts {
+  display: flex;
+  justify-content: center;
+  gap: 128px;
+  flex-wrap: wrap;
+}
+.giving-card-title {
+  max-width: 205px;
+  text-align: center;
+  margin: 0 auto auto;
+  font-size: 20px;
+}
+.giving-card-text {
+  color: #5d5656;
+  text-align: center;
+}
+.giving-img {
+  padding-bottom: 12px;
+}
+.hero-description {
+  width: 100%;
+  padding-left: 18px;
+  max-width: 450px;
+}
+/* media */
+@media (max-width: 920px) {
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-description {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-text {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .hero-title {
+    font-size: 35px;
+  }
+}
+@media (max-width: 920px) {
+  .hero-img {
+    width: 450px;
+  }
+}
+@media (max-width: 520px) {
+  .nav-list {
+    display: none;
+  }
+  .bar {
+    display: block;
+  }
+  .hero-title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  .hero-text {
+    margin-bottom: 40px;
+  }
+  .hero-img {
+    width: 320px;
+  }
+}
